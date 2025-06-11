@@ -1,36 +1,72 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Next.js + TypeScript + Vitest Project Template
 
-## Getting Started
+このリポジトリは、Next.js、TypeScript、および Vitest を使用したプロジェクトのテンプレートです。
 
-First, run the development server:
+## ✨ 特徴
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- **Next.js:** React ベースのフレームワークで、サーバーサイドレンダリング (SSR)、静的サイトジェネレーション (SSG) などをサポートします。
+- **TypeScript:** JavaScript に静的型付けを追加し、開発効率とコードの堅牢性を向上させます。
+- **Vitest:** Vite ベースの高速なユニットテストフレームワークです。
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 始め方
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 前提条件
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- [Node.js](https://nodejs.org/) (v18.x 以上を推奨)
+- [npm](https://www.npmjs.com/)、[yarn](https://yarnpkg.com/)、または [pnpm](https://pnpm.io/)
 
-## Learn More
+### インストール
 
-To learn more about Next.js, take a look at the following resources:
+1.  このリポジトリをクローンします:
+    ```bash
+    git clone https://github.com/kubotama/template-nextjs-typescript-vite.git
+    cd template-nextjs-typescript-vite
+    ```
+2.  依存関係をインストールします:
+    ```bash
+    npm install
+    # または
+    yarn install
+    # または
+    pnpm install
+    ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ 利用可能なスクリプト
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+プロジェクトディレクトリで、以下のスクリプトを実行できます。
 
-## Deploy on Vercel
+- `npm run dev` or `yarn dev` or `pnpm dev`
+  開発モードでアプリケーションを起動します。
+  ブラウザで http://localhost:3000 を開いて確認してください。
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- `npm run build` or `yarn build` or `pnpm build`
+  本番用にアプリケーションをビルドします。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- `npm run start` or `yarn start` or `pnpm start`
+  ビルドされたアプリケーションを本番モードで起動します。
+
+- `npm run test` or `yarn test` or `pnpm test`
+  Vitest を使用してテストを実行します。
+
+- `npm run test:watch` or `yarn test:watch` or `pnpm test:watch`
+  Vitest をウォッチモードで起動し、ファイルの変更を監視してテストを再実行します。
+
+- `npm run lint` or `yarn lint` or `pnpm lint`
+  ESLint を使用してコードの静的解析を実行します。
+
+## 📁 フォルダ構成 (例)
+
+./
+├── public/ # 静的ファイル
+├── src/
+│ ├── app/ # Next.js App Router
+│ │ ├── layout.tsx
+│ │ └── page.tsx
+│ ├── components/ # React コンポーネント
+│ └── lib/ # ユーティリティ関数など
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── vite.config.ts
+└── vitest.setup.ts
