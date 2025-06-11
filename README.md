@@ -19,8 +19,8 @@
 
 1.  このリポジトリをクローンします:
     ```bash
-    git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY_NAME.git
-    cd YOUR_REPOSITORY_NAME
+    git clone https://github.com/kubotama/template-nextjs-typescript-vite.git
+    cd template-nextjs-typescript-vite
     ```
 2.  依存関係をインストールします:
     ```bash
@@ -54,7 +54,19 @@
 - `npm run lint` or `yarn lint` or `pnpm lint`
   ESLint を使用してコードの静的解析を実行します。
 
-- `npm run format` or `yarn format` or `pnpm format`
-  Prettier を使用してコードをフォーマットします。
-
 ## 📁 フォルダ構成 (例)
+
+./
+├── public/ # 静的ファイル
+├── src/
+│ ├── app/ # Next.js App Router
+│ │ ├── layout.tsx
+│ │ └── page.tsx
+│ ├── components/ # React コンポーネント
+│ └── lib/ # ユーティリティ関数など
+├── next.config.ts
+├── package.json
+├── postcss.config.mjs
+├── tsconfig.json
+├── vite.config.ts
+└── vitest.setup.ts
