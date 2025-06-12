@@ -19,7 +19,7 @@ export default defineConfig({
         "**/coverage/**",
         "**/test/**",
         "**/*.d.ts",
-        "**/layout.tsx", // この行を追加
+        "**/layout.tsx", // layout.tsxは、自動生成したままのため、テストのカバレッジからは除外します。
         "vite.config.ts",
         "next.config.ts",
         "**/.next/**",
