@@ -12,7 +12,7 @@ export default defineConfig({
     css: true, // Tailwind CSSをテストで有効にする
     coverage: {
       provider: "v8",
-      include: ["**/*.{ts,tsx,js,jsx}"],
+      include: ["src/**/*.{ts,tsx,js,jsx}"], // src フォルダ配下のファイルを対象とする
       exclude: [
         "**/node_modules/**",
         "**/dist/**",
