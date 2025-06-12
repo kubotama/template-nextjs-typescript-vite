@@ -18,6 +18,7 @@ export default defineConfig({
         "**/coverage/**",
         "**/test/**",
         "**/*.d.ts",
+        "src/**/*.test.{ts,tsx,js,jsx}", // src配下のテストファイルを除外
         "**/layout.tsx", // layout.tsxは、自動生成したままのため、テストのカバレッジからは除外します。
         "vite.config.ts",
         "next.config.ts",
