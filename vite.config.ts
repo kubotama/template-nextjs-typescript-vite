@@ -10,5 +10,20 @@ export default defineConfig({
     globals: true,
     setupFiles: "./vitest.setup.ts",
     css: true, // Tailwind CSSをテストで有効にする
+    coverage: {
+      provider: "v8",
+      include: ["**/*.{ts,tsx,js,jsx}"],
+      exclude: [
+        "**/node_modules/**",
+        "**/dist/**",
+        "**/coverage/**",
+        "**/test/**",
+        "**/*.d.ts",
+        "**/layout.tsx", // この行を追加
+        "vite.config.ts",
+        "next.config.ts",
+        "**/.next/**",
+      ],
+    },
   },
 });
